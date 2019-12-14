@@ -78,6 +78,8 @@ public class JsonUtil {
     }
 
     public static void main(String[] args) {
+        String ss = null;
+        Demo1 demo2 = fromJson(ss, Demo1.class);
         Demo1 demo1 = new Demo1("husan", "xiaoshan", new Demo2(17, "a1"));
         Demo1 d2 = new Demo1("husi", "binjiang", new Demo2(18, "b1"));
         List<Demo1> list = Arrays.asList(demo1, d2);

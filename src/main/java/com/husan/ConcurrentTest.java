@@ -11,4 +11,7 @@ package com.husan;
  * @modify by reason:{方法名}:{原因}
  */
 public class ConcurrentTest {
+	public static void main(String[] args) {
+
+	}
 }

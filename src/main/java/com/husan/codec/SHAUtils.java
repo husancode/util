@@ -46,4 +46,14 @@ public class SHAUtils {
         return hexString;
     }
 
+
+    public static void main(String[] args) {
+        String orginal = "1234567";
+        byte[] encr = sha256(orginal);
+        System.out.println(encr.length);
+        System.out.println(new String(encr));
+        String ad = toHexString(orginal, 16);
+        System.out.println(ad);
+    }
+
 }
