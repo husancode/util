@@ -18,10 +18,8 @@ public class CopyTest {
 
 	public static void main(String[] args) throws InvocationTargetException, IllegalAccessException {
 		Person person = buildTestPerson();
-		int count = 10000000;
-		testCglibBeanCopy(person,count);
+		int count = 100000000;
 		testSpringBeanUtils(person, count);
-		testFieldSet(person, count);
 	}
 
 	public static Person buildTestPerson(){
